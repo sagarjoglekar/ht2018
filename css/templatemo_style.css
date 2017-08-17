@@ -1,6 +1,6 @@
-/* 
+/*
 
-Flex Template 
+Flex Template
 
 http://www.templatemo.com/tm-406-flex
 
@@ -16,6 +16,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 body {
   line-height: 1;
+}
+
+#header{
+    width:100%;
+    text-align:center;
+    border:1px solid grey;
+}
+img{
+  display:inline-block;
+  height:100;
+  margin: 0 auto;
 }
 
 .blue {
@@ -414,8 +425,8 @@ hr {
   }
 }
 @media screen and (max-width: 991px) {
-  .logo-wrapper { 
-    background-size: contain;     
+  .logo-wrapper {
+    background-size: contain;
   }
   .logo-wrapper{
     height: 50px;
@@ -433,7 +444,7 @@ hr {
   }
   .menu-first.show {
     /*opacity: 1;*/
-    /*height: auto;  */  
+    /*height: auto;  */
     margin-top: 10px;
     display: block;
     /*transition: opacity 1s, height 0;*/
@@ -441,17 +452,17 @@ hr {
   .menu-first {
     float: right;
     overflow: auto;
-    width: 100%;  
-    display: none;  
-    /*opacity: 1;  */  
-    /*height: 0;  */  
+    width: 100%;
+    display: none;
+    /*opacity: 1;  */
+    /*height: 0;  */
     /*background: rgba(50, 50, 50, 0.88);*/
     /*transition: opacity 1s, height 0 1s; */
     /*transition: all 0.3s ease;    */
   }
   .main-menu ul li a {
     line-height: 40px;
-    padding-top: 10px;   
+    padding-top: 10px;
   }
   .main-menu ul li.active a {
     border-top: none;
