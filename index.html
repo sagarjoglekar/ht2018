@@ -14,13 +14,36 @@ http://www.templatemo.com/tm-406-flex
 -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
+
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/templatemo_misc.css">
         <link rel="stylesheet" href="css/templatemo_style.css">
 
+        <script
+  		src="https://code.jquery.com/jquery-3.2.1.min.js"
+  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  		crossorigin="anonymous"></script>
         <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+        <script src="js/include.js"></script>
+        <script>
+        	
+		var random_images_array = ["baltimore1.jpg","baltimore2.jpg","baltimore3.jpg","baltimore4.jpg","baltimore5.jpg","baltimore6.jpg","baltimore7.jpg"];
+		function getRandomImage(imgAr, path) {
+		        path = path || 'images/'; // default path here
+		        var num = Math.floor( Math.random() * imgAr.length );
+		        var img = imgAr[ num ];
+		        var imgStr = '<img src="' + path + img + '" alt = "">';
+		        document.write(imgStr); document.close();
+		}
+
+		$(function(){
+			console.log("cfs");
+		    $("#includeAbout").load("about.html");
+		});
+
+        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -34,22 +57,19 @@ http://www.templatemo.com/tm-406-flex
         </header> -->
         <div class="site-main" id="sTop">
             <div class="site-header">
-                <div class="container">
+                <!--div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <ul class="social-icons">
-                                <!-- <li><a href="#" class="fa fa-facebook"></a></li> -->
                                 <li><a href="#" class="fa fa-twitter"></a></li>
-                                <!-- <li><a href="#" class="fa fa-dribbble"></a></li>
-                                <li><a href="#" class="fa fa-linkedin"></a></li> -->
                             </ul>
-                        </div> <!-- /.col-md-12 -->
-                    </div> <!-- /.row -->
-                </div> <!-- /.container -->
+                        </div> 
+                    </div> 
+                </div--> <!-- /.container -->
                 <div id="wrapperHeader">
-                    <div id="header">
+                    <!--div id="header">
                         <img class="center" src="./images/Baltimore-1.jpg" alt="logo" />
-                    </div>
+                    </div-->
                 </div>
 
                 <div class="main-header">
@@ -58,18 +78,21 @@ http://www.templatemo.com/tm-406-flex
                             <div class="row">
                                 <div class="logo-wrapper col-md-2 col-sm-2">
                                     <h1>
-                                        <a href="#"> HT2018 </a>
+                                        <a href="#"> ACM Hypertext 2018 </a>
                                     </h1>
                                 </div> <!-- /.logo-wrapper -->
                                 <div class="col-md-10 col-sm-10 main-menu text-right">
                                     <div class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></div>
                                     <ul class="menu-first">
                                         <li class="active"><a href="#">Home</a></li>
-                                        <li><a href="#Commitee">Program Commitee</a></li>
+                                        <li><a href="#About">About</a></li>
+                                        <li><a href="#Call">Call For papers</a></li>
+                                        <li><a href="#Commitee">Organization Commitee</a></li>
                                         <li><a href="#Venue">Venue</a></li>
                                         <li><a href="#Program">Program</a></li>
-                                        <li><a href="#Call For papers">Call For papers</a></li>
-                                        <!-- <li><a href="#Contact">Contact</a></li> -->
+                                        
+                                        <!--li><a href="#" class="fa fa-twitter"></a></li-->
+                                        <li><a href="#Contact"><img src="images/twitter.png" width="36px" height="36px"></a></li>
                                     </ul>
                                 </div> <!-- /.main-menu -->
                             </div> <!-- /.row -->
@@ -77,42 +100,47 @@ http://www.templatemo.com/tm-406-flex
                     </div> <!-- /.container -->
                 </div> <!-- /.main-header -->
             </div> <!-- /.site-header -->
+
+                        <div class="site-slider">
+                <div class="slider">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <div class="overlay"></div>
+                                <script type="text/javascript">getRandomImage(random_images_array);</script>
+                                <!--img src="images/baltimore1.jpg" alt=""-->
+                                <div class="slider-caption visible-md visible-lg">
+                                    <h2>The 29th ACM Conference on 
+									Hypertext and Social Media</h2>
+                                    <p>Baltimore, Maryland</p>
+                                    <p>July 4 - 7, 2018</p>
+                                    <a href="#Call" class="slider-btn">Important Dates</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- /.flexslider -->
+                </div> <!-- /.slider -->
+            </div> <!-- /.site-slider -->
         </div> <!-- /.site-main -->
 
 
-        <div class="content-section" id="services">
+        <div class="content-section" id="About" name="About">
             <div class="container">
                 <div class="row">
-                    <div class="heading-section col-md-12 text-left">
-                      <h2>About</h2>
-                        <p>The ACM Conference on Hypertext and Social Media (HT) is a premium venue for high quality peer-reviewed research on theory,
-                          systems and applications for hypertext and social media. The conference would be held in the beautiful city of Baltimore this year.
-                          HyperText is concerned with all aspects of modern hypertext research,
-                          including social media, adaptation, personalization, recommendations, user modeling, linked data and semantic web, dynamic and
-                          computed hypertext, and its application in digital humanities, as well as with interplay between those aspects such as linking
-                          stories with data or linking people with resources. HT2017 will focus on the role of links, linking,
-                          hypertext and hyperlink theory on the web and beyond, as a foundation for approaches and practices in the wider community.
-                          Therefore, HT2017 has the following tracks:
-                          <li> Hyper-Society covers digital humanities and connecting/connected people </li>
-                          <li> Hyper-Data covers connected things on the documents, Web, and IoT </li>
-                          <li> Hyper-Media covers connected traditional and non-traditional media </li>
-                          <li>Social Networks and Digital Humanities (Linking people)</li>
-                          <li>Semantic Web and Linked Data (Linking data)</li>
-                          <li>Adaptive Hypertext and Recommendations (Linking resources)</li>
-                          <li>News and Storytelling (Linking stories)</li>
-                          <li>Demonstrations</li>
-                        </p>
-                    </div> <!-- /.heading-section -->
+                	<div class="heading-section col-md-12 text-left">
+                	<div id="includeAbout"></div>
+                	</div>
+                    
                 </div>
             </div> <!-- /.container -->
         </div> <!-- /#services -->
 
 
-        <div class="content-section" id="Commitee">
+        <div class="content-section" id="Commitee" name="Commitee">
             <div class="container">
                 <div class="row">
                     <div class="heading-section col-md-12 text-left">
-                        <h2>Program Commitee</h2>
+                        <h2>Organization Commitee</h2>
                         <p>
                           <li> <b>General Chair</b> Dongwon Lee dongwon@psu.edu </li>
                           <li> <b>Local Chair</b> Nam Nguyen npnguyen@towson.edu </li>
@@ -133,7 +161,7 @@ http://www.templatemo.com/tm-406-flex
             </div> <!-- /.container -->
         </div> <!-- /#our-team -->
 
-        <div class="content-section" id="Venue">
+        <div class="content-section" id="Venue" name="Venue">
             <div class="container">
                 <div class="row">
                     <div class="heading-section col-md-12 text-left">

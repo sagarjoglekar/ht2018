@@ -293,18 +293,18 @@ hr {
 }
 
 .logo-wrapper {
-  background: url(../images/logo.png) no-repeat;
+/*  background: url(../images/logo.png) no-repeat;*/
   height: 100px;
   background-position: 15px;
 }
 .logo-wrapper a {
   display: inline-block;
   overflow: hidden;
-  padding-left: 130px;
-  line-height: 100px;
-  text-transform: uppercase;
+  padding-left: 20px;
+/*  line-height: 100px;
+  text-transform: uppercase;*/
   color: #ec523f;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 700;
 }
 
