@@ -21,14 +21,22 @@ http://www.templatemo.com/tm-406-flex
         <link rel="stylesheet" href="css/templatemo_misc.css">
         <link rel="stylesheet" href="css/templatemo_style.css">
 
-        <script
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <!--script
   		src="https://code.jquery.com/jquery-3.2.1.min.js"
   		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   		crossorigin="anonymous"></script>
-        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
-        <script src="js/include.js"></script>
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script-->
         <script>
-        	
+		$(function(){
+			$(".flip").click(function(){
+				console.log("test");
+				$(".panel").toggle();
+			});
+		});
+
+       	
 		var random_images_array = ["baltimore1.jpg","baltimore2.jpg","baltimore3.jpg","baltimore4.jpg","baltimore5.jpg","baltimore6.jpg","baltimore7.jpg"];
 		function getRandomImage(imgAr, path) {
 		        path = path || 'images/'; // default path here
@@ -45,6 +53,7 @@ http://www.templatemo.com/tm-406-flex
 		    $("#includeOrganization").load("organization.html");
 		    $("#includeVenue").load("venue.html");
 		});
+
 
         </script>
     </head>
@@ -118,7 +127,7 @@ http://www.templatemo.com/tm-406-flex
 									Hypertext and Social Media</h2>
                                     <p>Baltimore, Maryland</p>
                                     <p>July 4 - 7, 2018</p>
-                                    <a href="#Call" class="slider-btn">Important Dates</a>
+                                    <a href="#About" class="slider-btn">Important Dates</a>
                                 </div>
                             </li>
                         </ul>
@@ -201,8 +210,6 @@ http://www.templatemo.com/tm-406-flex
             </div> <!-- /.container -->
         </div> <!-- /#footer -->
 
-        <script src="js/vendor/jquery-1.11.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
         <script src="js/bootstrap.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
