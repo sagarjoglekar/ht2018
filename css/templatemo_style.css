@@ -688,7 +688,7 @@ hr {
   transition: all 200ms ease-in-out;
 }
 .team-member .member-thumb .team-overlay h3 {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   color: white;
   display: inline-block;
