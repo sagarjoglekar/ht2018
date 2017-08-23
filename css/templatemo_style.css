@@ -548,10 +548,11 @@ hr {
 }
 
 .service-item .service-icon {
-  font-size: 3em;
+  font-size: 1.2em;
   padding: 110px 0;
 }
 .service-item .service-content {
+  cursor: pointer;
   padding: 10px;
   position: absolute;
   top: 0;
@@ -724,14 +725,14 @@ hr {
 }
 
 .skills-heading {
-  margin-top: 60px;
-  margin-bottom: 50px;
+/*  margin-top: 60px; */
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 .skills-heading h3.skills-title {
-  font-style: italic;
+  font-style: bold;
   font-size: 18px;
   text-transform: uppercase;
-  color: #5e5e5e;
 }
 .skills-heading .small-text {
   font-style: italic;
