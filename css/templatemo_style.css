@@ -290,7 +290,7 @@ hr {
   -moz-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.07);
   -webkit-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.07);
   box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.07);
-  margin-top: -80px;
+/*  margin-top: -80px;*/
 }
 
 .logo-wrapper {
@@ -497,7 +497,8 @@ hr {
 
 .content-section {
   margin-top: 80px;
-  padding-top: 100px;
+/*  padding-top: 100px;*/
+  padding-top: 60px;
 }
 
 .heading-section {
