@@ -34,7 +34,7 @@ http://www.templatemo.com/tm-406-flex
 			$(".flip_research").click(function(){
 				$(".research").toggle();
 				$(".doctoral").hide();
-				$(".workshop").hide();
+				$(".bluesky").hide();
 				$(".tutorial").hide();
 				$('html,body').animate({
 					scrollTop: $(".research").offset().top},
@@ -43,25 +43,25 @@ http://www.templatemo.com/tm-406-flex
 			$(".flip_doctoral").click(function(){
 				$(".research").hide();
 				$(".doctoral").toggle();
-				$(".workshop").hide();
+				$(".bluesky").hide();
 				$(".tutorial").hide();
 				$('html,body').animate({
 					scrollTop: $(".doctoral").offset().top},
 					'slow');
 			});
-			$(".flip_workshop").click(function(){
+			$(".flip_bluesky").click(function(){
 				$(".research").hide();
 				$(".doctoral").hide();
-				$(".workshop").toggle();
+				$(".bluesky").toggle();
 				$(".tutorial").hide();
 				$('html,body').animate({
-					scrollTop: $(".workshop").offset().top},
+					scrollTop: $(".bluesky").offset().top},
 					'slow');
 			});
 			$(".flip_tutorial").click(function(){
 				$(".research").hide();
 				$(".doctoral").hide();
-				$(".workshop").hide();
+				$(".bluesky").hide();
 				$(".tutorial").toggle();
 				$('html,body').animate({
 					scrollTop: $(".tutorial").offset().top},
@@ -155,6 +155,7 @@ http://www.templatemo.com/tm-406-flex
                                     <p>Baltimore, Maryland</p>
                                     <p>9-12 July, 2018</p>
                                     <a href="#About" class="slider-btn">Important Dates</a>
+                                    <a href="https://easychair.org/my/conference.cgi?conf=ht18;a=12905039" target="_blank" class="slider-btn">Submission Site</a>
                                 </div>
                             </li>
                         </ul>
@@ -362,19 +363,7 @@ http://www.templatemo.com/tm-406-flex
                         </div>
 		</div>
     	</div-->
-	<!-- <div class="col-md-3 col-sm-6">
-    		<div class="service-item flip_workshop" id="service-3">
-                      <div class="service-icon">
-	    		<h3>Call for Workshop Proposals</h3>
-                            </div> 
-			<div class="service-content">
-                                <div class="inner-service">
-	    			<h3>Workshop Proposals</h3>
-				<p>Click for more information.</p>
-				</div>
-                        </div> 
-		</div> 
-    	</div> -->
+
 	<div class="col-md-3 col-sm-6">
     		<div class="service-item flip_tutorial" id="service-4">
                       <div class="service-icon">
@@ -388,7 +377,19 @@ http://www.templatemo.com/tm-406-flex
                         </div> <!-- /.service-content -->
 		</div> <!-- service-1 -->
     	</div>
-
+	<div class="col-md-3 col-sm-6">
+    		<div class="service-item flip_bluesky" id="service-3">
+                      <div class="service-icon">
+	    		<h3>Call for Blue Sky Ideas</h3>
+                      </div> 
+			<div class="service-content">
+                                <div class="inner-service">
+					<h3>Blue Sky Ideas</h3>
+				<p>Click for more information.</p>
+				</div>
+                        </div> 
+		</div> 
+    	</div>
 	<br>
 	<br>
     <div class="research" id="research" style="display:none" >
@@ -496,11 +497,6 @@ http://www.templatemo.com/tm-406-flex
         </ul>
     </div>
 
-
-    
-
-
-
     <div class="tutorial" style="display:none;">
 	    <h2>Call for Tutorial Proposals</h2>
 	    <p>
@@ -527,6 +523,15 @@ http://www.templatemo.com/tm-406-flex
 <p> The accepted proposal presenters should provide comprehensive tutorial notes or slides to the tutorial audience free of
  charge.</p>
 </div>
+
+<div class="bluesky" style="display:none;">
+	    <h2>Call for Blue Sky Ideas</h2>
+	    <p>
+	    This year, with support from the Computing Community Consortium (CCC), ACM Hypertext is organizing a special <a href="https://cra.org/ccc/visioning/blue-sky/">Blue Sky Ideas</a> Track. The emphasis of this track is on visionary ideas, long-term challenges, and new research opportunities. This track is designed to overcome the constraints of the traditional review process, and will serve as an incubator for innovative approaches, risky and provocative ideas, and to propose challenges and opportunities in the near future. Submissions to this track are limited to a maximum of 4 pages, using the same <a href="http://www.acm.org/publications/proceedings-template">submission template and are to be submitted using the same <a href="https://easychair.org/my/conference.cgi?conf=ht18;a=12905039">submission site</a>. 
+		    Thanks to CCC sponsorship, the top 3 papers submitted to this track will be awarded with travel grants of $1000, $750 and $500 respectively. Successful submissions will be published in the regular proceedings. All submissions to this special track will be evaluated by a dedicated committee consisting of Krishna Gummadi, David Millard, Charlie Hargood, Nishanth Sastry and Ingmar Weber.
+ </p>
+</div>
+
 </div> <!-- /.heading-section -->
 </div> <!-- /.row -->
 </div> <!-- /.container -->
