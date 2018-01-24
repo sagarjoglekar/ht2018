@@ -75,6 +75,36 @@ http://www.templatemo.com/tm-406-flex
         });
     });
 
+    $(function() {
+        $(".flip_zhao").click(function() {
+            $(".ZhaoBio").toggle();
+            $(".SethBio").hide();
+            $(".SageBio").hide();
+            $('html,body').animate({
+                    scrollTop: $(".research").offset().top
+                },
+                'slow');
+        });
+        $(".flip_lesli").click(function() {
+            $(".ZhaoBio").hide();
+            $(".SageBio").toggle();
+            $(".SethBio").hide();
+            $('html,body').animate({
+                    scrollTop: $(".doctoral").offset().top
+                },
+                'slow');
+        });
+        $(".flip_seth").click(function() {
+            $(".ZhaoBio").hide();
+            $(".SageBio").hide();
+            $(".SethBio").toggle();
+            $('html,body').animate({
+                    scrollTop: $(".doctoral").offset().top
+                },
+                'slow');
+        });
+    });
+
 
     var random_images_array = ["baltimore1.jpg", "baltimore2.jpg", "baltimore3.jpg", "baltimore4.jpg", "baltimore5.jpg", "baltimore6.jpg", "baltimore7.jpg"];
 
@@ -276,7 +306,7 @@ http://www.templatemo.com/tm-406-flex
             </div>
             <!-- /.row -->
             <div class="row">
-                <div class="team-member col-md-3 col-sm-6">
+                <div class="team-member col-md-3 col-sm-6 service-item flip_seth">
                     <div class="member-thumb">
                         <img src="images/keynote1.png" alt="">
                         <div class="team-overlay">
@@ -289,12 +319,11 @@ http://www.templatemo.com/tm-406-flex
                                 <!--li><a href="" class="fa fa-linkedin"></a></li-->
                             </ul>
                         </div>
-                        <!-- /.team-overlay -->
                     </div>
                     <!-- /.member-thumb -->
                 </div>
                 <!-- /.team-member -->
-                <div class="team-member col-md-3 col-sm-6">
+                <div class="team-member col-md-3 col-sm-6 service-item flip_zhao">
                     <div class="member-thumb">
                         <img src="images/keynote2.png" alt="">
                         <div class="team-overlay">
@@ -312,7 +341,7 @@ http://www.templatemo.com/tm-406-flex
                     <!-- /.member-thumb -->
                 </div>
                 <!-- /.team-member -->
-                <div class="team-member col-md-3 col-sm-6">
+                <div class="team-member col-md-3 col-sm-6 service-item flip_lesli">
                     <div class="member-thumb">
                         <img src="images/keynote3.jpg" alt="">
                         <div class="team-overlay">
@@ -330,6 +359,24 @@ http://www.templatemo.com/tm-406-flex
                     <!-- /.member-thumb -->
                 </div>
                 <!-- /.team-member -->
+            </div>
+            <div class="ZhaoBio" style="display:none;">
+                <h2> Biography </h2>
+                <p>
+                    Ben Zhao is the Neubauer Professor of Computer Science at University of Chicago. He completed his PhD from Berkeley (2004) and his BS from Yale (1997). He is an ACM distinguished scientist, and recipient of the NSF CAREER award, MIT Technology Review's TR-35 Award (Young Innovators Under 35), ComputerWorld Magazine's Top 40 Tech Innovators award, Google Faculty award, and IEEE ITC Early Career Award. His work has been covered by media outlets such as New York Times, Boston Globe, LA Times, MIT Tech Review, and Slashdot. He has published more than 150 publications in areas of security and privacy, networked systems, wireless networks, data-mining and HCI (H-index 58). His most recent work looks closely at the role of machine learning and neural networks in generating and detecting synthetic and altered content online. He recently served as TPC co-chair for the World Wide Web Conference (WWW 2016) and will be PC-chair for the upcoming ACM Internet Measurement Conference (IMC 2018).
+                </p>
+            </div>
+            <div class="SageBio" style="display:none;">
+                <h2> Biography </h2>
+                <p>
+                    Leslie Sage is the Director of Data Science at DevResults, a software company that provides a data management platform for the international development community. She has implemented DevResults software for use in over 60 countries by clients overseeing billion-dollar international development organizations and created training programs in data management. Previously, Leslie worked with the Obama Presidential Campaign in 2012 as Deputy Data Director for the battleground state of Iowa. In that position Leslie leveraged voter models to allocate campaign resources, created up-to-the-minute dashboards for decision-makers, and discovered Midwestern craft beers. Leslie hold a Ph.D. in Microvascular Physiology from the University of Bristol in England (2012) and a B.A. in Cognitive Science from Rice University (2004). Her research took her to the Hospital for Infectious Diseases in Ho Chi Minh City, Vietnam, where she collaborated with the Gates Foundation and Oxford University to develop a new way to study dengue infection.
+                </p>
+            </div>
+            <div class="SethBio" style="display:none;">
+                <h2> Biography </h2>
+                <p>
+                    Seth Stephens-Davidowitz has used data from the internet -- particularly Google searches -- to get new insights into the human psyche. Seth has used Google searches to measure racism, self-induced abortion, depression, child abuse, hateful mobs, the science of humor, sexual preference, anxiety, son preference, and sexual insecurity, among many other topics.
+                </p>
             </div>
             <!-- /.row -->
         </div>
