@@ -2,98 +2,105 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 <!-- Authors: Sagar Joglekar and Kiran Garimella -->
-    <head>
-        <meta charset="utf-8">
-        <title>ACM Hypertext 2018</title>
-    	<meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--
+
+<head>
+    <meta charset="utf-8">
+    <title>ACM Hypertext 2018</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
 Flex Template
 http://www.templatemo.com/tm-406-flex
 -->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/templatemo_misc.css">
-        <link rel="stylesheet" href="css/templatemo_style.css">
-
-        <script src="js/vendor/jquery-1.11.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-        <!--script
-  		src="https://code.jquery.com/jquery-3.2.1.min.js"
-  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  		crossorigin="anonymous"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo_misc.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
+    <script src="js/vendor/jquery-1.11.0.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+    <!--script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
         <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script-->
-        <script>
-		$(function(){
-			$(".flip_research").click(function(){
-				$(".research").toggle();
-				$(".doctoral").hide();
-				$(".workshop").hide();
-				$(".tutorial").hide();
-				$('html,body').animate({
-					scrollTop: $(".research").offset().top},
-					'slow');
-			});
-			$(".flip_doctoral").click(function(){
-				$(".research").hide();
-				$(".doctoral").toggle();
-				$(".workshop").hide();
-				$(".tutorial").hide();
-				$('html,body').animate({
-					scrollTop: $(".doctoral").offset().top},
-					'slow');
-			});
-			$(".flip_workshop").click(function(){
-				$(".research").hide();
-				$(".doctoral").hide();
-				$(".workshop").toggle();
-				$(".tutorial").hide();
-				$('html,body').animate({
-					scrollTop: $(".workshop").offset().top},
-					'slow');
-			});
-			$(".flip_tutorial").click(function(){
-				$(".research").hide();
-				$(".doctoral").hide();
-				$(".workshop").hide();
-				$(".tutorial").toggle();
-				$('html,body').animate({
-					scrollTop: $(".tutorial").offset().top},
-					'slow');
-			});
-		});
+    <script>
+    $(function() {
+        $(".flip_research").click(function() {
+            $(".research").toggle();
+            $(".doctoral").hide();
+            $(".workshop").hide();
+            $(".tutorial").hide();
+            $('html,body').animate({
+                    scrollTop: $(".research").offset().top
+                },
+                'slow');
+        });
+        $(".flip_doctoral").click(function() {
+            $(".research").hide();
+            $(".doctoral").toggle();
+            $(".workshop").hide();
+            $(".tutorial").hide();
+            $('html,body').animate({
+                    scrollTop: $(".doctoral").offset().top
+                },
+                'slow');
+        });
+        $(".flip_workshop").click(function() {
+            $(".research").hide();
+            $(".doctoral").hide();
+            $(".workshop").toggle();
+            $(".tutorial").hide();
+            $('html,body').animate({
+                    scrollTop: $(".workshop").offset().top
+                },
+                'slow');
+        });
+        $(".flip_tutorial").click(function() {
+            $(".research").hide();
+            $(".doctoral").hide();
+            $(".workshop").hide();
+            $(".tutorial").toggle();
+            $('html,body').animate({
+                    scrollTop: $(".tutorial").offset().top
+                },
+                'slow');
+        });
+    });
 
 
-		var random_images_array = ["baltimore1.jpg","baltimore2.jpg","baltimore3.jpg","baltimore4.jpg","baltimore5.jpg","baltimore6.jpg","baltimore7.jpg"];
-		function getRandomImage(imgAr, path) {
-		        path = path || 'images/'; // default path here
-		        var num = Math.floor( Math.random() * imgAr.length );
-		        var img = imgAr[ num ];
-		        var imgStr = '<img src="' + path + img + '" alt = "">';
-		        document.write(imgStr); document.close();
-		}
+    var random_images_array = ["baltimore1.jpg", "baltimore2.jpg", "baltimore3.jpg", "baltimore4.jpg", "baltimore5.jpg", "baltimore6.jpg", "baltimore7.jpg"];
 
-        </script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+    function getRandomImage(imgAr, path) {
+        path = path || 'images/'; // default path here
+        var num = Math.floor(Math.random() * imgAr.length);
+        var img = imgAr[num];
+        var imgStr = '<img src="' + path + img + '" alt = "">';
+        document.write(imgStr);
+        document.close();
+    }
+    </script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
-
-        <!-- <header>
+    <!-- <header>
           <figure>
             <img src="images/Baltimore-1.jpg" alt="Logo" />
           </figure>
         </header> -->
-        <div class="site-main" id="sTop">
-            <div class="site-header">
-                <!--div class="container">
+    <div class="site-main" id="sTop">
+        <div class="site-header">
+            <!--div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <ul class="social-icons">
@@ -101,96 +108,102 @@ http://www.templatemo.com/tm-406-flex
                             </ul>
                         </div>
                     </div>
-                </div--> <!-- /.container -->
-                <div id="wrapperHeader">
-                    <!--div id="header">
+                </div-->
+            <!-- /.container -->
+            <div id="wrapperHeader">
+                <!--div id="header">
                         <img class="center" src="./images/Baltimore-1.jpg" alt="logo" />
                     </div-->
-                </div>
-
-                <div class="main-header">
-                    <div class="container">
-                        <div id="menu-wrapper">
-                            <div class="row">
-                                <div class="logo-wrapper col-md-2 col-sm-2">
-                                    <h1>
+            </div>
+            <div class="main-header">
+                <div class="container">
+                    <div id="menu-wrapper">
+                        <div class="row">
+                            <div class="logo-wrapper col-md-2 col-sm-2">
+                                <h1>
                                         <a href="#"> ACM Hypertext 2018 </a>
                                     </h1>
-                                </div> <!-- /.logo-wrapper -->
-                                
-                                <div class="col-md-10 col-sm-10 main-menu text-right">
-                                    <div class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></div>
-                                    
-                                    <ul class="menu-first">
-                                        <!--li class="active"><a href="#">Home</a></li-->
-                                        <li><a href="index.html#About">About</a></li>
-                                        <!-- <li><a href="#Dates">Important Dates</a></li> -->
-			                <li><a href="index.html#News">News</a></li>
-                                        <li><a href="index.html#Keynotes">Keynotes</a></li>
-                                        <li><a href="index.html#Call">Call For papers</a></li>
-                                        <li><a href="index.html#Commitee">Organization</a></li>
-                                        <li><a href="index.html#Venue">Venue</a></li>
-                                        <li><a href="index.html#Program">Program</a></li>
-                                    </ul>
-                                </div> <!-- /.main-menu -->
-                            </div> <!-- /.row -->
-                        </div> <!-- /#menu-wrapper -->
-                    </div> <!-- /.container -->
-                </div> <!-- /.main-header -->
-
-            </div> <!-- /.site-header -->
-
-	    <br><br>
-	    <br><br>
-          <div class="content-section" id="Call" name="Call">
+                            </div>
+                            <!-- /.logo-wrapper -->
+                            <div class="col-md-10 col-sm-10 main-menu text-right">
+                                <div class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></div>
+                                <ul class="menu-first">
+                                    <!--li class="active"><a href="#">Home</a></li-->
+                                    <li><a href="index.html#About">About</a></li>
+                                    <!-- <li><a href="#Dates">Important Dates</a></li> -->
+                                    <li><a href="index.html#News">News</a></li>
+                                    <li><a href="index.html#Keynotes">Keynotes</a></li>
+                                    <li><a href="index.html#Call">Call For papers</a></li>
+                                    <li><a href="index.html#Commitee">Organization</a></li>
+                                    <li><a href="index.html#Venue">Venue</a></li>
+                                    <li><a href="index.html#Program">Program</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.main-menu -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /#menu-wrapper -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.main-header -->
+        </div>
+        <!-- /.site-header -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="content-section" id="Call" name="Call">
             <div class="container">
                 <div class="row">
                     <div class="heading-section col-md-12 text-left">
-	    <h2>Call for Blue Sky Ideas</h2>
-	    <p>
-	    This year, with support from the Computing Community Consortium (CCC), ACM Hypertext is organizing a special <a href="https://cra.org/ccc/visioning/blue-sky/">Blue Sky Ideas</a> Track. The emphasis of this track is on visionary ideas, long-term challenges, and new research opportunities. This track is designed to overcome the constraints of the traditional review process, and will serve as an incubator for innovative approaches, risky and provocative ideas, and to propose challenges and opportunities in the near future. Submissions to this track are limited to a maximum of 4 pages, using the given submission <a href="http://www.acm.org/publications/proceedings-template">template</a> and are to be submitted at our <a href="https://easychair.org/conferences/?conf=ht18">easychair submission site</a>. 
-            Thanks to CCC sponsorship, the top 3 papers submitted to this track will be awarded with travel grants of $1000, $750 and $500 respectively. Successful submissions will be published in the regular proceedings. All submissions to this special track will be evaluated by a dedicated committee consisting of Krishna Gummadi, David Millard, Charlie Hargood, Nishanth Sastry and Ingmar Weber.
-
- </p>
+                        <h2>Call for Blue Sky Ideas</h2>
+                        <p>
+                            This year, with support from the Computing Community Consortium (CCC), ACM Hypertext is organizing a special <a href="https://cra.org/ccc/visioning/blue-sky/">Blue Sky Ideas</a> Track. The emphasis of this track is on visionary ideas, long-term challenges, and new research opportunities. This track is designed to overcome the constraints of the traditional review process, and will serve as an incubator for innovative approaches, risky and provocative ideas, and to propose challenges and opportunities in the near future. Submissions to this track are limited to a maximum of 4 pages, using the given submission <a href="http://www.acm.org/publications/proceedings-template">template</a> and are to be submitted at our <a href="https://easychair.org/conferences/?conf=ht18">easychair submission site</a>. Thanks to CCC sponsorship, the top 3 papers submitted to this track will be awarded with travel grants of $1000, $750 and $500 respectively. Successful submissions will be published in the regular proceedings. All submissions to this special track will be evaluated by a dedicated committee consisting of Krishna Gummadi, David Millard, Charlie Hargood, Nishanth Sastry and Ingmar Weber.
+                        </p>
                         <h3>Deadlines</h3>
                         <ul>
                             <li>Submission Deadline :<a href="https://www.timeanddate.com/countdown/generic?p0=103&iso=20180302T235959&year=2018&month=3&day=2&hour=23&min=59&sec=59&msg=Due%20date%3a%20Blue%20Sky">March 2nd 2018</a> </li>
                             <li> Notification Due by :<a href="https://www.timeanddate.com/countdown/generic?p0=103&iso=20180302T235959&year=2018&month=4&day=2&hour=23&min=59&sec=59&msg=Acceptance%20date%3a%20Blue%20Sky"> April 2nd 2018 </a> </li>
                             <li> Camera Ready Due by :<a href="https://www.timeanddate.com/countdown/generic?p0=103&iso=20180302T235959&year=2018&month=5&day=1&hour=23&min=59&sec=59&msg=Camera%20Ready%3a%20Blue%20Sky"> May 1st 2018 </a> </li>
                             <li> Submissions to be done on our <a href="https://easychair.org/conferences/?conf=ht18"> Easy Chair website </a> </li>
-
-			</ul>
-		<h2>Sponsors</h2>
-			<!--p>Hypertext is supported by:</p-->
-			<table>
-				<tr><td><a href="https://cra.org/ccc/visioning/blue-sky/" target="_blank" title=""><img src="https://ht.acm.org/ht2018/images/ccc.jpg" width="250" alt="ACM - Association for Computing Machinery"></a></td>
-			</table>
-
-
-                    </div> <!-- /.heading-section -->
-                </div> <!-- /.row -->
-
-            </div> <!-- /.container -->
-        </div> <!-- /#our-team -->
                         </ul>
-
+                        <h2>Sponsors</h2>
+                        <!--p>Hypertext is supported by:</p-->
+                        <table>
+                            <tr>
+                                <td><a href="https://cra.org/ccc/visioning/blue-sky/" target="_blank" title=""><img src="https://ht.acm.org/ht2018/images/ccc.jpg" width="250" alt="ACM - Association for Computing Machinery"></a></td>
+                        </table>
+                    </div>
+                    <!-- /.heading-section -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#our-team -->
+        </ul>
         <div id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-xs-12 text-left">
                         <span>Copyright &copy; 2018 ACM Hypertext</span>
-                  </div> <!-- /.text-center -->
+                    </div>
+                    <!-- /.text-center -->
                     <div class="col-md-4 hidden-xs text-right">
                         <a href="index.html" id="go-top">Home</a>
-                    </div> <!-- /.text-center -->
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
-        </div> <!-- /#footer -->
-
+                    </div>
+                    <!-- /.text-center -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#footer -->
         <script src="js/bootstrap.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
         <!-- Google Map -->
         <!--script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script src="js/vendor/jquery.gmap3.min.js"></script>
@@ -214,5 +227,6 @@ http://www.templatemo.com/tm-406-flex
             });
         </script-->
         <!-- templatemo 406 flex -->
-    </body>
+</body>
+
 </html>
