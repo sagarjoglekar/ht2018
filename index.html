@@ -80,6 +80,7 @@ http://www.templatemo.com/tm-406-flex
             $(".ZhaoBio").toggle();
             $(".SethBio").hide();
             $(".SageBio").hide();
+            $(".ElizabethBio").hide();
             $('html,body').animate({
                     scrollTop: $(".research").offset().top
                 },
@@ -89,6 +90,7 @@ http://www.templatemo.com/tm-406-flex
             $(".ZhaoBio").hide();
             $(".SageBio").toggle();
             $(".SethBio").hide();
+            $(".ElizabethBio").hide();
             $('html,body').animate({
                     scrollTop: $(".doctoral").offset().top
                 },
@@ -98,6 +100,17 @@ http://www.templatemo.com/tm-406-flex
             $(".ZhaoBio").hide();
             $(".SageBio").hide();
             $(".SethBio").toggle();
+            $(".ElizabethBio").hide();
+            $('html,body').animate({
+                    scrollTop: $(".doctoral").offset().top
+                },
+                'slow');
+        });
+        $(".flip_elizabeth").click(function() {
+            $(".ZhaoBio").hide();
+            $(".SageBio").hide();
+            $(".SethBio").hide();
+            $(".ElizabethBio").toggle();
             $('html,body').animate({
                     scrollTop: $(".doctoral").offset().top
                 },
@@ -360,6 +373,26 @@ http://www.templatemo.com/tm-406-flex
                     <!-- /.member-thumb -->
                 </div>
                 <!-- /.team-member -->
+
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6 service-item flip_elizabeth">
+                    <div class="member-thumb">
+                        <img src="images/keynote4.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Elizabeth Kittrie </h3>
+                            <span>National Library of Medicine </span>
+                            <ul class="social">
+                                <!-- <li><a href="https://lesliesage.github.io/" class="fa fa-globe"></a></li> -->
+                                <!-- <li><a href="https://twitter.com/lesliemsage" class="fa fa-twitter"></a></li> -->
+                                <!-- <li><a href="https://www.linkedin.com/in/lesliesage" class="fa fa-linkedin"></a></li> -->
+                                <!--li><a href="" class="fa fa-linkedin"></a></li-->
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
             </div>
             <div class="ZhaoBio" style="display:none;">
                 <h2> Biography </h2>
@@ -377,6 +410,12 @@ http://www.templatemo.com/tm-406-flex
                 <h2> Biography </h2>
                 <p>
                     Seth Stephens-Davidowitz has used data from the internet -- particularly Google searches -- to get new insights into the human psyche. Seth has used Google searches to measure racism, self-induced abortion, depression, child abuse, hateful mobs, the science of humor, sexual preference, anxiety, son preference, and sexual insecurity, among many other topics.
+                </p>
+            </div>
+            <div class="ElizabethBio" style="display:none;">
+                <h2> Biography </h2>
+                <p>
+                    Elizabeth Kittrie is a Strategic Advisor for Data and Open Science at the National Library of Medicine (NLM) where she is involved in developing the NLM long-range strategic plan and leading data science and open science initiatives. Prior to joining to the NLM, she served as a Senior Advisor to the Associate Director for Data Science at the National Institutes of Health, where she led open innovation efforts including the Open Science Prize, a collaborative partnership between the NIH, Wellcome Trust and Howard Hughes Medical Institute. Kittrie has also served as Senior Advisor to the Chief Technology Officer of the U.S. Department of Health and Human Services, where she led open government activities across HHS and coordinated the Department’s efforts to develop a common Public Access Policy. Prior to joining HHS, Kittrie served as the first Associate Director for the Department of Biomedical Informatics at Arizona State University.
                 </p>
             </div>
             <!-- /.row -->
