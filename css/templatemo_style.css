@@ -311,7 +311,7 @@ hr {
 
 .main-menu ul li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 .main-menu ul li:last-child {
   margin-right: 35px;
