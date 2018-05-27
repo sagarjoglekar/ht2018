@@ -6,6 +6,36 @@
 <html class="no-js">
 <!--<![endif]-->
 <!-- Authors: Sagar Joglekar and Kiran Garimella -->
+<style>
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 2px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #000000;
+    color: white;
+    font size: 26;
+}
+</style>
 
 <head>
     <meta charset="utf-8">
@@ -130,7 +160,6 @@ http://www.templatemo.com/tm-406-flex
         document.write(imgStr);
         document.close();
     }
-
     </script>
 </head>
 
@@ -177,13 +206,13 @@ http://www.templatemo.com/tm-406-flex
                                     <li><a href="#About">About</a></li>
                                     <!-- <li><a href="#Dates">Important Dates</a></li> -->
                                     <li><a href="#News">News</a></li>
-				    <li><a href="#Accepted">Program</a></li>
+                                    <li><a href="#Accepted">Program</a></li>
                                     <li><a href="#Keynotes">Keynotes</a></li>
                                     <li><a href="#Call">Call For papers</a></li>
                                     <li><a href="#Commitee">Organization</a></li>
-				    <li><a href="#Registration">Registration</a></li>
-				    <li><a href="#Venue">Venue</a></li>
-				    <!--li><a href="#Program">Program</a></li-->
+                                    <li><a href="#Registration">Registration</a></li>
+                                    <li><a href="#Venue">Venue</a></li>
+                                    <!--li><a href="#Program">Program</a></li-->
                                 </ul>
                             </div>
                             <!-- /.main-menu -->
@@ -256,33 +285,41 @@ http://www.templatemo.com/tm-406-flex
                 <div class="col-md-4 col-sm-6" id="Dates">
                     <h2>Important dates</h2>
                     <!--p><span><del><b>Workshop Proposal Deadline: <a href="https://www.timeanddate.com/countdown/generic?iso=20171211T115959&p0=103&msg=Workshop+proposal+Deadline&font=cursive">11th December 2017</a></b></del></span-->
-                        <!--br /-->
-                        <!--p><span><b>Abstract submission deadline <b>(optional)</b>: <a href="https://www.timeanddate.com/countdown/generic?iso=20180126T235959&p0=103&msg=Hypertext+2018+abstract+submission+deadline&font=cursive">26th January 2018</a></b></span-->
-                            <!--br /-->
-                            <p><span><b>Paper submission deadline: <a href="https://www.timeanddate.com/countdown/generic?p0=103&iso=20180202T235959&p0=256&msg=Hypertext+2018+paper+submission+deadline&font=cursive">2nd February 2018</a></b></span>
+                    <!--br /-->
+                    <!--p><span><b>Abstract submission deadline <b>(optional)</b>: <a href="https://www.timeanddate.com/countdown/generic?iso=20180126T235959&p0=103&msg=Hypertext+2018+abstract+submission+deadline&font=cursive">26th January 2018</a></b></span-->
+                    <!--br /-->
+                    <p><span><b>Paper submission deadline: <a href="https://www.timeanddate.com/countdown/generic?p0=103&iso=20180202T235959&p0=256&msg=Hypertext+2018+paper+submission+deadline&font=cursive">2nd February 2018</a></b></span>
+                        <br />
+                        <span>Acceptance notification: 2nd April 2018</span>
+                        <br />
+                        <span>Camera ready due:  1st May 2018</span>
+                        <br />
+                        <p><span><b>Tutorial submission deadline: 2nd March 2018</b></span>
+                            <br />
+                            <p><span><b>Blue sky ideas submission deadline: <a href="https://www.timeanddate.com/countdown/generic?p0=103&iso=20180302T235959&year=2018&month=3&day=2&hour=23&min=59&sec=59&msg=Due%20date%3a%20Blue%20Sky">2nd March 2018</a></b></span>
                                 <br />
-                                <span>Acceptance notification: 2nd April 2018</span>
-                                <br />
-                                <span>Camera ready due:  1st May 2018</span>
-                                <br />
-                                <p><span><b>Tutorial submission deadline: 2nd March 2018</b></span>
+                                <p><span>Blue sky ideas acceptance: 2nd April 2018</span>
                                     <br />
-                                <p><span><b>Blue sky ideas submission deadline: <a href="https://www.timeanddate.com/countdown/generic?p0=103&iso=20180302T235959&year=2018&month=3&day=2&hour=23&min=59&sec=59&msg=Due%20date%3a%20Blue%20Sky">2nd March 2018</a></b></span>
-                                    <br />
-                                    <p><span>Blue sky ideas acceptance: 2nd April 2018</span>
-                                        <br />
-                                        <p><strong>Conference:</strong> 9-12 July 2018</p>
-                                        <p><em><strong>All the deadlines are at 23:59 <a href="https://www.timeanddate.com/countdown/generic?p0=103&iso=20180202T235959&p0=256&msg=Hypertext+2018+paper+submission+deadline&font=cursive" target="_blank" rel="noopener">Hawaii Time</a>.</strong></em></p>
+                                    <p><strong>Conference:</strong> 9-12 July 2018</p>
+                                    <p><em><strong>All the deadlines are at 23:59 <a href="https://www.timeanddate.com/countdown/generic?p0=103&iso=20180202T235959&p0=256&msg=Hypertext+2018+paper+submission+deadline&font=cursive" target="_blank" rel="noopener">Hawaii Time</a>.</strong></em></p>
                 </div>
                 <!-- /.col-md-4 -->
                 <div class="col-md-4 col-sm-6">
-            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/hashtag/acmht18" data-widget-id="964387186874368000">#acmht18 Tweets</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
-			            <!--a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%23acmht18" data-widget-id="958307339626516480">Tweets about #acmht18</a>
+                    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/hashtag/acmht18" data-widget-id="964387186874368000">#acmht18 Tweets</a>
+                    <script>
+                    ! function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0],
+                            p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + "://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, "script", "twitter-wjs");
+                    </script>
+                    <!--a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%23acmht18" data-widget-id="958307339626516480">Tweets about #acmht18</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script-->
-
                     <!--a class="twitter-timeline" href="https://twitter.com/ACMHT" data-width="400" data-height="600">Tweets by ACMHT</a>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script-->
                 </div>
@@ -304,13 +341,20 @@ http://www.templatemo.com/tm-406-flex
                 <div class="heading-section col-md-12 text-left">
                     <h2>News</h2>
                     <ul>
-                        <li> <h3> The list of accepted papers can be found <a href="accepted_papers.html">here</a></h3></li>
-                        <li> <h3> Registration info is up. Please see <a href="#Registration">here</a></h3></li>
-                        <li> <h3> This year there will be a Blue-sky track , More information <a href="Call_Blue_Sky.html">here</a></h3></li>
-                        <li> <h3> List of accepted Tutorials can be found <a href="accepted_tutorials.html">here</a></h3></li> 
-                        <li> <h3> List of accepted Workshops can be found <a href="accepted_workshops.html">here</a></h3></li> 
-                        <li> <h3> Selected papers will be invited to submit an extension to <a href="http://tweb.acm.org/">ACM Transactions on the Web</a></h3></li>
-                        <li> <h3> Accepted papers for the Blue Sky track are announced <a href="Call_Blue_Sky.html#News">here</a></h3></li>
+                        <li>
+                            <h3> The list of accepted papers can be found <a href="accepted_papers.html">here</a></h3></li>
+                        <li>
+                            <h3> Registration info is up. Please see <a href="#Registration">here</a></h3></li>
+                        <li>
+                            <h3> This year there will be a Blue-sky track , More information <a href="Call_Blue_Sky.html">here</a></h3></li>
+                        <li>
+                            <h3> List of accepted Tutorials can be found <a href="accepted_tutorials.html">here</a></h3></li>
+                        <li>
+                            <h3> List of accepted Workshops can be found <a href="accepted_workshops.html">here</a></h3></li>
+                        <li>
+                            <h3> Selected papers will be invited to submit an extension to <a href="http://tweb.acm.org/">ACM Transactions on the Web</a></h3></li>
+                        <li>
+                            <h3> Accepted papers for the Blue Sky track are announced <a href="Call_Blue_Sky.html#News">here</a></h3></li>
                     </ul>
                 </div>
                 <!-- /.heading-section -->
@@ -319,7 +363,6 @@ http://www.templatemo.com/tm-406-flex
         </div>
         <!-- /.container -->
     </div>
-
     <!-- /#services -->
     <!--div class="content-section" id="Deadlines" name="Deadlines">
         <div class="container">
@@ -343,29 +386,454 @@ http://www.templatemo.com/tm-406-flex
 
                 </div>
                 <!-- /.heading-section -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
+    </div>
+    <!-- /.row -->
+    </div>
+    <!-- /.container -->
     </div-->
-
     <div class="content-section" id="Accepted" name="Accepted">
         <div class="container">
             <div class="row">
                 <div class="heading-section col-md-12 text-left">
-		<h2>Program</h2>
-		<p>Detailed program coming soon!</p>
-		<table>
-			<tr>
-				<td><a href="accepted_papers.html" target=_blank>Accepted Papers</td>
-			</tr>
-			<tr>
-				<td><a href="accepted_tutorials.html" target=_blank>Accepted Tutorials</td>
-			</tr>
-			<tr>
-				<td><a href="accepted_workshops.html" target=_blank>Accepted Workshops</td>
-			</tr>
-		</table>
+                    <h2>Program</h2>
+                    <table>
+                        <tr>
+                            <td><a href="accepted_papers.html" target=_blank>Accepted Papers</td>
+            </tr>
+            <tr>
+                <td><a href="accepted_tutorials.html" target=_blank>Accepted Tutorials</td>
+            </tr>
+            <tr>
+                <td><a href="accepted_workshops.html" target=_blank>Accepted Workshops</td>
+            </tr>
+        </table>
+
+
+<h2>Program for Day 1: 07/10/2018 </h2>
+<table id ="customers">
+  <tr>
+    <th class="tg-031e"> <b> Track </b> </th>
+    <th class="tg-031e"><b> Time Slot </b> </th>
+    <th class="tg-031e"><b> Title </b></th>
+    <th class="tg-031e"><b> Type </b></th>
+  </tr>
+  <tr>
+    <td class="tg-031e">Welcome and opening </td>
+    <td class="tg-031e">8:40 - 9:00</td>
+    <td class="tg-031e">Welcome and kickoff</td>
+    <td class="tg-031e"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e"><b> Keynote </b> </td>
+    <td class="tg-031e">09:00 - 10:00</td>
+    <td class="tg-031e">Lessons in Search Data - Seth Stephens-Davidowitz </td>
+    <td class="tg-031e">Keynote</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">BREAK</td>
+    <td class="tg-031e">10:00 - 10:30</td>
+    <td class="tg-031e">-- -- </td>
+    <td class="tg-031e">-- -- </td>
+  </tr>
+  <tr>
+    <td class="tg-031e"><b> Computational Social Science </b> </td>
+    <td class="tg-031e">10:30 - 11:40</td>
+    <td class="tg-031e">Detecting the correlation between sentiment and user- as well as text-level meta-data from benchmark corpora - Shubhanshu Mishra and Jana Diesner
+
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> Computational Social Science </b> </td>
+    <td class="tg-031e">10:30 - 11:40</td>
+    <td class="tg-031e">Mining and Forecasting Career Trajectories of Music Artists - Shushan Arakelyan, Fred Morstatter, Margaret Martin, Emilio Ferrara and Aram Galstyan
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> Computational Social Science </b> </td>
+    <td class="tg-031e">10:30 - 11:40</td>
+    <td class="tg-031e">Predicting Twitter User Socioeconomic Attributes with Network and Language Information -Nikolaos Aletras and Ben Chamberlain
+</td>
+    <td class="tg-031e">Short paper</td>
+  </tr>
+  
+  <tr>
+    <td class="tg-031e"><b> LUNCH AND POSTERS </b> </td>
+    <td class="tg-031e">11:40 - 13:15</td>
+    <td class="tg-031e">-- --</td>
+    <td class="tg-031e">-- --</td>
+  </tr>
+
+    <tr>
+    <td class="tg-031e"><b> ML </b> </td>
+    <td class="tg-031e">13:15 - 14:20</td>
+    <td class="tg-031e">Joint Distributed Representation of Text and Structure of Semi-Structured Documents -Abhishek Laddha, Salil Joshi, Samiulla Shaikh and Sameep Mehta
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> ML </b> </td>
+    <td class="tg-031e">13:15 - 14:20</td>
+    <td class="tg-031e">As Stable As You Are: Re-ranking Search Results using Query-Drift Analysis - Haggai Roitman, Ella Rabinovich and Oren Sar Shalom
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> ML </b> </td>
+    <td class="tg-031e">13:15 - 14:20</td>
+    <td class="tg-031e">Embedding Networks with Edge Attributes - Palash Goyal, Homa Hosseinmardi, Emilio Ferrara and Aram Galstyan
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+
+    <tr>
+    <td class="tg-031e"><b> RecSys </b> </td>
+    <td class="tg-031e">13:15 - 14:20</td>
+    <td class="tg-031e">A Collaborative Filtering Method for Handling Diverse and Repetitive User-Item Interactions - Oren Sar Shalom, Haggai Roitman, Amihood Amir and Alex Karatzoglou
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> RecSys </b> </td>
+    <td class="tg-031e">13:15 - 14:20</td>
+    <td class="tg-031e"> Privacy-Aware Tag Recommendation for Image Sharing - Ashwini Tonge, Cornelia Caragea and Anna Squicciarini
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> RecSys </b> </td>
+    <td class="tg-031e">13:15 - 14:20</td>
+    <td class="tg-031e">Recommending Teammates with Deep Neural Networks - Palash Goyal, Anna Sapienza and Emilio Ferrara
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+<tr>
+    <td class="tg-031e"><b> TEA AND POSTERS </b> </td>
+    <td class="tg-031e">15:30 - 16:00</td>
+    <td class="tg-031e">-- --</td>
+    <td class="tg-031e">-- --</td>
+  </tr>
+  
+<tr>
+    <td class="tg-031e"><b> Keynote </b> </td>
+    <td class="tg-031e">16:00 - 17:00</td>
+    <td class="tg-031e">Data and Design in International Development - Leslie Sage </td>
+    <td class="tg-031e">Keynote</td>
+  </tr>
+
+</table>
+
+
+<h2>Program for Day 2: 07/11/2018 </h2>
+<table id ="customers">
+  <tr>
+    <th class="tg-031e"> <b> Track </b> </th>
+    <th class="tg-031e"><b> Time Slot </b> </th>
+    <th class="tg-031e"><b> Title </b></th>
+    <th class="tg-031e"><b> Type </b></th>
+  </tr>
+  
+  <tr>
+    <td class="tg-031e"><b> Keynote </b> </td>
+    <td class="tg-031e">09:00 - 10:00</td>
+    <td class="tg-031e">Insecure Machine Learning Systems and Their Impact on the Web - Ben Zhao </td>
+    <td class="tg-031e">Keynote</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">BREAK</td>
+    <td class="tg-031e">10:00 - 10:30</td>
+    <td class="tg-031e">-- -- </td>
+    <td class="tg-031e">-- -- </td>
+  </tr>
+  <tr>
+    <td class="tg-031e"><b> Temporal </b> </td>
+    <td class="tg-031e">10:30 - 11:35</td>
+    <td class="tg-031e">Bootstrapping Web Archive Collections from Social Media - Alexander Nwala, Michele Weigle and Michael Nelson
+
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> Temporal </b> </td>
+    <td class="tg-031e">10:30 - 11:35</td>
+    <td class="tg-031e">Studying the Spatio-Temporal Dynamics of Small-Scale Events in Twitter - Paul Mousset, Yoann Pitarch and Lynda Tamine
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> Temporal </b> </td>
+    <td class="tg-031e">10:30 - 11:35</td>
+    <td class="tg-031e">The Utility Problem of Web Content Popularity Prediction - Nuno Moniz and Luis Torgo
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+<tr>
+    <td class="tg-031e"><b> Semantic </b> </td>
+    <td class="tg-031e">11:35 - 12:30</td>
+    <td class="tg-031e">Know Thy Neighbors, and More! Studying the Role of Context in Entity Recommendation - Sumit Bhatia and Harit Vishwakarma
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> Semantic </b> </td>
+    <td class="tg-031e">11:35 - 12:30</td>
+    <td class="tg-031e">Content Driven Enrichment of Formal Text Using Concept Definitions and Applications - Abhinav Jain, Nitin Gupta, Shashank Mujumdar, Sameep Mehta and Rishi Madhok
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> Semantic </b> </td>
+    <td class="tg-031e">11:35 - 12:30</td>
+    <td class="tg-031e">Modeling Semantics Between Programming Codes and Annotations - Yihan Lu and Sharon Hsiao
+</td>
+    <td class="tg-031e">Short paper</td>
+  </tr>
+  
+  <tr>
+    <td class="tg-031e"><b> LUNCH AND POSTERS </b> </td>
+    <td class="tg-031e">12:30 - 13:45</td>
+    <td class="tg-031e">-- --</td>
+    <td class="tg-031e">-- --</td>
+  </tr>
+
+    <tr>
+    <td class="tg-031e"><b> User Behaviour </b> </td>
+    <td class="tg-031e">13:45 - 15:00</td>
+    <td class="tg-031e">IntelliEye: Enhancing MOOC Learners' Video Watching Experience with Real-Time Attention Tracking
+ -Tarmo Robal, Yue Zhao, Christoph Lofi and Claudia Hauff
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> User Behaviour </b> </td>
+    <td class="tg-031e">13:45 - 15:00</td>
+    <td class="tg-031e">SimilarHITs : Revealing the Role of Task Similarity in Microtask Crowdsourcing - Ujwal Gadiraju
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> User Behaviour </b> </td>
+    <td class="tg-031e">13:45 - 15:00</td>
+    <td class="tg-031e">Penny Auctions are Predictable: Predicting and profiling user behavior on DealDash - Xinyi Zhang, Shawn Shan, Shiliang Tang, Haitao Zheng and Ben Y. Zhao
+</td>
+    <td class="tg-031e">Short paper</td>
+  </tr>
+
+<tr>
+    <td class="tg-031e"><b> TEA AND POSTERS </b> </td>
+    <td class="tg-031e">15:00 - 15:30</td>
+    <td class="tg-031e">-- --</td>
+    <td class="tg-031e">-- --</td>
+  </tr>
+  
+
+    <tr>
+    <td class="tg-031e"><b> Hypertext </b> </td>
+    <td class="tg-031e">15:30 - 17:00</td>
+    <td class="tg-031e">The StoryPlaces Platform: Building a Web-Based Locative Hypertext System - Charlie Hargood, Mark Weal and David Millard
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> Hypertext </b> </td>
+    <td class="tg-031e">15:30 - 17:00</td>
+    <td class="tg-031e">Narrative Plot Comparison Based on a Bag-of-actors Document Model - Sharath Srivatsa and Srinath Srinivasa
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> Hypertext </b> </td>
+    <td class="tg-031e">15:30 - 17:00</td>
+    <td class="tg-031e">Mother - An Integrated Approach to Hypertext Domains - Claus Atzenbeck, Daniel Roßner and Manolis Tzagarakis
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> Hypertext </b> </td>
+    <td class="tg-031e">15:30 - 17:00</td>
+    <td class="tg-031e">VAnnotatoR: A Framework for Generating Multimodal Hypertexts - Alexander Mehler, Giuseppe Abrami, Christian Spiekermann and Matthias Jostock
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+
+<tr>
+    <td class="tg-031e"><b> Banquet </b> </td>
+    <td class="tg-031e">19:00 - 22:00</td>
+    <td class="tg-031e">-- --</td>
+    <td class="tg-031e">Banquet</td>
+  </tr>
+
+</table>
+
+
+
+<h2>Program for Day 3: 07/12/2018 </h2>
+<table id ="customers">
+  <tr>
+    <th class="tg-031e"> <b> Track </b> </th>
+    <th class="tg-031e"><b> Time Slot </b> </th>
+    <th class="tg-031e"><b> Title </b></th>
+    <th class="tg-031e"><b> Type </b></th>
+  </tr>
+  
+  <tr>
+    <td class="tg-031e"><b> Keynote </b> </td>
+    <td class="tg-031e">09:00 - 10:00</td>
+    <td class="tg-031e">The US National Library of Medicine: A Platform for Biomedical Discovery and Data-Powered Health - Elizabeth Kittrie</td>
+    <td class="tg-031e">Keynote</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">BREAK AND POSTERS</td>
+    <td class="tg-031e">10:00 - 10:30</td>
+    <td class="tg-031e">-- -- </td>
+    <td class="tg-031e">-- -- </td>
+  </tr>
+  <tr>
+    <td class="tg-031e"><b> Privacy </b> </td>
+    <td class="tg-031e">10:30 - 10:55</td>
+    <td class="tg-031e">Understanding Privacy Dichotomy in Twitter - Taraneh Khazaei, Lu   Xiao, Robert Mercer and Atif Khan
+
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> Privacy </b> </td>
+    <td class="tg-031e">10:55 - 11:20</td>
+    <td class="tg-031e">Securing Social Media User Data - An Adversarial Approach - Ghazaleh Beigi, Kai Shu, Yanchao Zhang and Huan Liu
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> Privacy </b> </td>
+    <td class="tg-031e">11:20 - 11:45</td>
+    <td class="tg-031e">Search Rank Fraud De-Anonymization in Online Systems - Mizanur Rahman, Nestor Hernandez, Bogdan Carbunar and Duen Horng Chau
+
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+    <tr>
+    <td class="tg-031e"><b> Bots and automatic methods </b> </td>
+    <td class="tg-031e">11:45 - 12:05</td>
+    <td class="tg-031e">Learning to rank social bots - Diego Perna and Andrea Tagarelli
+</td>
+<td class="tg-031e">Full paper</td>
+</tr>
+
+  <tr>
+    <td class="tg-031e"><b> Bots and automatic methods </b> </td>
+    <td class="tg-031e">12:05 - 12:30</td>
+    <td class="tg-031e">An Approximately Optimal Bot for Non-Submodular Social Reconnaissance - An Approximately Optimal Bot for Non-Submodular Social Reconnaissance
+    <td class="tg-031e">Full paper</td>
+  </tr>
+</td>
+
+<tr>
+    <td class="tg-031e"><b> LUNCH AND POSTERS </b> </td>
+    <td class="tg-031e">12:35 - 14:15</td>
+    <td class="tg-031e">-- --</td>
+    <td class="tg-031e">-- --</td>
+  </tr>
+
+
+
+  <tr>
+    <td class="tg-031e"><b> News </b> </td>
+    <td class="tg-031e">14:15 - 14:40</td>
+    <td class="tg-031e">A Deep Joint Network for Session-based News Recommendations with Contextual Augmentation - Lemei Zhang, Peng Liu and Jon Atle Gulla
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+
+    <tr>
+    <td class="tg-031e"><b> News </b> </td>
+    <td class="tg-031e">14:40 - 14:55</td>
+    <td class="tg-031e">Dynamics and Prediction of Clicks on News from Twitter - Arthi Ramachandran, Lucy Wang and Augustin Chaintreau
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> News </b> </td>
+    <td class="tg-031e">14:55 - 15:10</td>
+    <td class="tg-031e"> To Post or Not to Post: Using Online Trends to Predict Popularity of Offline Content - Sofiane Abbar, Carlos Castillo and Antonio Sanfilippo
+</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> Community Detection </b> </td>
+    <td class="tg-031e">15:10 - 15:35</td>
+    <td class="tg-031e">Stance Classification through Proximity-based Community Detection - Ophélie Fraisier, Guillaume Cabanac, Yoann Pitarch, Romaric Besançon and Boughanem Mohand</td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+  <tr>
+    <td class="tg-031e"><b> Community Detection </b> </td>
+    <td class="tg-031e">15:10 - 15:35</td>
+    <td class="tg-031e"> Sentiment-driven Community Profiling and Detection on Social Media - Amin Salehi, Mert Ozer and Hasan Davulcu </td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+<tr>
+    <td class="tg-031e"><b> TEA AND POSTERS </b> </td>
+    <td class="tg-031e">16:00 - 16:30</td>
+    <td class="tg-031e">-- --</td>
+    <td class="tg-031e">-- --</td>
+  </tr>
+
+<tr>
+    <td class="tg-031e"><b> Blue Sky Ideas </b> </td>
+    <td class="tg-031e">16:30 - 16:45</td>
+    <td class="tg-031e"> Intelligent Generative Locative Hyperstructure - Charlie Hargood, Fred Charles and David Millard </td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+<tr>
+    <td class="tg-031e"><b> Blue Sky Ideas </b> </td>
+    <td class="tg-031e">16:45 - 17:00</td>
+    <td class="tg-031e"> As We May Hear: Our Slaves Of Steel II - Mark Bernstein  </td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+
+<tr>
+    <td class="tg-031e"><b> Blue Sky Ideas </b> </td>
+    <td class="tg-031e">17:00 - 17:15</td>
+    <td class="tg-031e">A Villain's Guide to Social Media and Web Science - Mark Bernstein and Clare Hooper </td>
+    <td class="tg-031e">Full paper</td>
+  </tr>
+<tr>
+    <td class="tg-031e"><b> Conference Closing </b> </td>
+    <td class="tg-031e">17:15 - 17:30</td>
+    <td class="tg-031e">-- -- </td>
+    <td class="tg-031e">Conference Closing</td>
+  </tr>
+
+</table>
+
                 </div>
                 <!-- /.heading-section -->
             </div>
@@ -398,136 +866,115 @@ http://www.templatemo.com/tm-406-flex
                                 <li><a href="https://twitter.com/seths_d" class="fa fa-twitter"></a></li>
                                 <li><a href="https://www.linkedin.com/in/seth-stephens-davidowitz-b7053918/" class="fa fa-linkedin"></a></li>
                                 <!--li><a href="" class="fa fa-linkedin"></a></li-->
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- /.member-thumb -->
+                                </ul>
                 </div>
-                <!-- /.team-member -->
-                <div class="team-member col-md-3 col-sm-6 service-item flip_zhao">
-                    <div class="member-thumb">
-                        <img src="images/keynote2.png" alt="">
-                        <div class="team-overlay">
-                            <h3>Ben Zhao</h3>
-                            <span>U. Chicago</span>
-                            <ul class="social">
-                                <li><a href="http://people.cs.uchicago.edu/~ravenben/" class="fa fa-globe"></a></li>
-                                <li><a href="https://twitter.com/ravenben" class="fa fa-twitter"></a></li>
-                                <li><a href="https://www.linkedin.com/in/ravenben" class="fa fa-linkedin"></a></li>
-                                <!--li><a href="" class="fa fa-linkedin"></a></li-->
-                            </ul>
-                        </div>
-                        <!-- /.team-overlay -->
-                    </div>
-                    <!-- /.member-thumb -->
-                </div>
-                <!-- /.team-member -->
-                <div class="team-member col-md-3 col-sm-6 service-item flip_lesli">
-                    <div class="member-thumb">
-                        <img src="images/keynote3.jpg" alt="">
-                        <div class="team-overlay">
-                            <h3>Leslie Sage</h3>
-                            <span>DevResults</span>
-                            <ul class="social">
-                                <li><a href="https://lesliesage.github.io/" class="fa fa-globe"></a></li>
-                                <li><a href="https://twitter.com/lesliemsage" class="fa fa-twitter"></a></li>
-                                <li><a href="https://www.linkedin.com/in/lesliesage" class="fa fa-linkedin"></a></li>
-                                <!--li><a href="" class="fa fa-linkedin"></a></li-->
-                            </ul>
-                        </div>
-                        <!-- /.team-overlay -->
-                    </div>
-                    <!-- /.member-thumb -->
-                </div>
-                <!-- /.team-member -->
-
-                <!-- /.team-member -->
-                <div class="team-member col-md-3 col-sm-6 service-item flip_elizabeth">
-                    <div class="member-thumb">
-                        <img src="images/keynote4.jpeg" alt="">
-                        <div class="team-overlay">
-                            <h3>Elizabeth Kittrie </h3>
-                            <span>National Library of Medicine </span>
-                            <ul class="social">
-                                <!-- <li><a href="https://lesliesage.github.io/" class="fa fa-globe"></a></li> -->
-                                <!-- <li><a href="https://twitter.com/lesliemsage" class="fa fa-twitter"></a></li> -->
-                                <!-- <li><a href="https://www.linkedin.com/in/lesliesage" class="fa fa-linkedin"></a></li> -->
-                                <!--li><a href="" class="fa fa-linkedin"></a></li-->
-                            </ul>
-                        </div>
-                        <!-- /.team-overlay -->
-                    </div>
-                    <!-- /.member-thumb -->
-                </div>
-                <!-- /.team-member -->
             </div>
-            <div class="ZhaoBio" style="display:none;">
-                <h2> Biography </h2>
-                <p>
-                    Ben Zhao is the Neubauer Professor of Computer Science at University of Chicago. He completed his PhD from Berkeley (2004) and his BS from Yale (1997). He is an ACM distinguished scientist, and recipient of the NSF CAREER award, MIT Technology Review's TR-35 Award (Young Innovators Under 35), ComputerWorld Magazine's Top 40 Tech Innovators award, Google Faculty award, and IEEE ITC Early Career Award. His work has been covered by media outlets such as New York Times, Boston Globe, LA Times, MIT Tech Review, and Slashdot. He has published more than 150 publications in areas of security and privacy, networked systems, wireless networks, data-mining and HCI (H-index 58). His most recent work looks closely at the role of machine learning and neural networks in generating and detecting synthetic and altered content online. He recently served as TPC co-chair for the World Wide Web Conference (WWW 2016) and will be PC-chair for the upcoming ACM Internet Measurement Conference (IMC 2018).
-                </p>
-                <h2> Abstract </h2>
-		<p><b>
-			Insecure Machine Learning Systems and Their Impact on the Web
-		</b></p>
-		<p>
-		Increasingly powerful machine learning models are often seen as a panacea to a wide range of computational problems
-today.  There is an unsustainable level of excitement over recent results in solving systems problems using deep
-learning techniques, leading to a rush to deploy ML-based systems in countries around the world. In this talk, I
-will consider some of the negative implications of these powerful but opaque models from two angles. I will discuss
-vulnerabilities inherent in many of today's deep learning models, as well as the dangers of advanced ML tools used
-by malicious attackers. I believe that these critical issues must be addressed adequately before the wide-spread
-adoption of deep learning tools in today’s security critical applications.
-		</p>
-
-            </div>
-            <div class="SageBio" style="display:none;">
-                <h2> Biography </h2>
-                <p>
-                    Leslie Sage is the Director of Data Science at DevResults, a software company that provides a data management platform for the international development community. She has implemented DevResults software for use in over 60 countries by clients overseeing billion-dollar international development organizations and created training programs in data management. Previously, Leslie worked with the Obama Presidential Campaign in 2012 as Deputy Data Director for the battleground state of Iowa. In that position Leslie leveraged voter models to allocate campaign resources, created up-to-the-minute dashboards for decision-makers, and discovered Midwestern craft beers. Leslie hold a Ph.D. in Microvascular Physiology from the University of Bristol in England (2012) and a B.A. in Cognitive Science from Rice University (2004). Her research took her to the Hospital for Infectious Diseases in Ho Chi Minh City, Vietnam, where she collaborated with the Gates Foundation and Oxford University to develop a new way to study dengue infection.
-                </p>
-                <h2> Abstract </h2>
-		<p><b>Data and Design in International Development</b></p>
-		<p>
-		Foreign aid is a $150 billion dollar industry, but the skills and tools for using data in international
-development are in their infancy. Herculean efforts to overhaul systems of agriculture, education,
-sanitation, and health go unexamined because collecting that information is hard. Dr. Leslie Sage will
-introduce the challenges in this field and discuss how her company, DevResults, has addressed many of
-these obstacles. At the heart of every incremental gain are tools for connecting data to context, tools to
-derive useful information from related data, and expansion of interoperability. Forget big data; these
-organizations are tracking information that doesn't begin in electronic format, like school refurbishments
-and job trainings, then storing it in unstructured documents on inaccessible hard drives around the globe.
-These data are small but mighty, offering the chance to reduce disease, improve education, and lift people
-out of poverty. Making decisions with this data should be low-hanging fruit without the need for sexy math
-or the latest tools for handling terabytes of data. Developmental and humanitarian work is shifting to
-structured data in the cloud, but there’s a long way to go in designing web-based tools for this
-community. ACM attendees will be invited to lend their expertise to the cause.
-		</p>
-            </div>
-            <div class="SethBio" style="display:none;">
-                <h2> Biography </h2>
-                <p>
-                    Seth Stephens-Davidowitz has used data from the internet -- particularly Google searches -- to get new insights into the human psyche. Seth has used Google searches to measure racism, self-induced abortion, depression, child abuse, hateful mobs, the science of humor, sexual preference, anxiety, son preference, and sexual insecurity, among many other topics.
-                </p>
-		<h2>Abstract</h2>
-		<p><b>Lessons in Search Data</b></p>
-		<p>Seth will discuss what Google searches can teach us about racism, sexuality, mental illness, and other topics.</p>
-            </div>
-            <div class="ElizabethBio" style="display:none;">
-                <h2> Biography </h2>
-                <p>
-                    Elizabeth Kittrie is a Strategic Advisor for Data and Open Science at the National Library of Medicine (NLM) where she is involved in developing the NLM long-range strategic plan and leading data science and open science initiatives. Prior to joining to the NLM, she served as a Senior Advisor to the Associate Director for Data Science at the National Institutes of Health, where she led open innovation efforts including the Open Science Prize, a collaborative partnership between the NIH, Wellcome Trust and Howard Hughes Medical Institute. Kittrie has also served as Senior Advisor to the Chief Technology Officer of the U.S. Department of Health and Human Services, where she led open government activities across HHS and coordinated the Department’s efforts to develop a common Public Access Policy. Prior to joining HHS, Kittrie served as the first Associate Director for the Department of Biomedical Informatics at Arizona State University.
-                </p>
-		<h2>Abstract</h2>
-		<p><b>The US National Library of Medicine: A Platform for Biomedical Discovery and Data-Powered Health</b></p>
-		<p>
-		This talk will address the role of the National Library of Medicine in fostering data-powered health and serving as a platform for biomedical discovery.  It will examine emerging trends in the biomedical research landscape, such as the rapid growth of biomedical data sources, shifting paradigms for data sharing and open science, and the changing role of libraries in providing access to digital information.  The talk will cover the newly developed long-range vision of the National Library of Medicine, with its triple aim of: 1) accelerating discovery and advancing health through data-driven research; 2) reaching more people in more ways through enhanced dissemination and engagement; and 3) its contributions to building a workforce and populace that is empowered to conduct data-driven research and enabled to optimize health and healthcare delivery through access to new types of health information.  This talk will also examine the importance of co-creation, though partnerships and crowdsourcing, to achieve solutions that optimize the roles of government and stakeholders in improving health and healthcare through information resources.
-		</p>
-
-            </div>
-            <!-- /.row -->
+            <!-- /.member-thumb -->
         </div>
-        <!-- /.container -->
+        <!-- /.team-member -->
+        <div class="team-member col-md-3 col-sm-6 service-item flip_zhao">
+            <div class="member-thumb">
+                <img src="images/keynote2.png" alt="">
+                <div class="team-overlay">
+                    <h3>Ben Zhao</h3>
+                    <span>U. Chicago</span>
+                    <ul class="social">
+                        <li><a href="http://people.cs.uchicago.edu/~ravenben/" class="fa fa-globe"></a></li>
+                        <li><a href="https://twitter.com/ravenben" class="fa fa-twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/in/ravenben" class="fa fa-linkedin"></a></li>
+                        <!--li><a href="" class="fa fa-linkedin"></a></li-->
+                    </ul>
+                </div>
+                <!-- /.team-overlay -->
+            </div>
+            <!-- /.member-thumb -->
+        </div>
+        <!-- /.team-member -->
+        <div class="team-member col-md-3 col-sm-6 service-item flip_lesli">
+            <div class="member-thumb">
+                <img src="images/keynote3.jpg" alt="">
+                <div class="team-overlay">
+                    <h3>Leslie Sage</h3>
+                    <span>DevResults</span>
+                    <ul class="social">
+                        <li><a href="https://lesliesage.github.io/" class="fa fa-globe"></a></li>
+                        <li><a href="https://twitter.com/lesliemsage" class="fa fa-twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/in/lesliesage" class="fa fa-linkedin"></a></li>
+                        <!--li><a href="" class="fa fa-linkedin"></a></li-->
+                    </ul>
+                </div>
+                <!-- /.team-overlay -->
+            </div>
+            <!-- /.member-thumb -->
+        </div>
+        <!-- /.team-member -->
+        <!-- /.team-member -->
+        <div class="team-member col-md-3 col-sm-6 service-item flip_elizabeth">
+            <div class="member-thumb">
+                <img src="images/keynote4.jpeg" alt="">
+                <div class="team-overlay">
+                    <h3>Elizabeth Kittrie </h3>
+                    <span>National Library of Medicine </span>
+                    <ul class="social">
+                        <!-- <li><a href="https://lesliesage.github.io/" class="fa fa-globe"></a></li> -->
+                        <!-- <li><a href="https://twitter.com/lesliemsage" class="fa fa-twitter"></a></li> -->
+                        <!-- <li><a href="https://www.linkedin.com/in/lesliesage" class="fa fa-linkedin"></a></li> -->
+                        <!--li><a href="" class="fa fa-linkedin"></a></li-->
+                    </ul>
+                </div>
+                <!-- /.team-overlay -->
+            </div>
+            <!-- /.member-thumb -->
+        </div>
+        <!-- /.team-member -->
+    </div>
+    <div class="ZhaoBio" style="display:none;">
+        <h2> Biography </h2>
+        <p>
+            Ben Zhao is the Neubauer Professor of Computer Science at University of Chicago. He completed his PhD from Berkeley (2004) and his BS from Yale (1997). He is an ACM distinguished scientist, and recipient of the NSF CAREER award, MIT Technology Review's TR-35 Award (Young Innovators Under 35), ComputerWorld Magazine's Top 40 Tech Innovators award, Google Faculty award, and IEEE ITC Early Career Award. His work has been covered by media outlets such as New York Times, Boston Globe, LA Times, MIT Tech Review, and Slashdot. He has published more than 150 publications in areas of security and privacy, networked systems, wireless networks, data-mining and HCI (H-index 58). His most recent work looks closely at the role of machine learning and neural networks in generating and detecting synthetic and altered content online. He recently served as TPC co-chair for the World Wide Web Conference (WWW 2016) and will be PC-chair for the upcoming ACM Internet Measurement Conference (IMC 2018).
+        </p>
+        <h2> Abstract </h2>
+        <p><b>
+            Insecure Machine Learning Systems and Their Impact on the Web
+        </b></p>
+        <p>
+            Increasingly powerful machine learning models are often seen as a panacea to a wide range of computational problems today. There is an unsustainable level of excitement over recent results in solving systems problems using deep learning techniques, leading to a rush to deploy ML-based systems in countries around the world. In this talk, I will consider some of the negative implications of these powerful but opaque models from two angles. I will discuss vulnerabilities inherent in many of today's deep learning models, as well as the dangers of advanced ML tools used by malicious attackers. I believe that these critical issues must be addressed adequately before the wide-spread adoption of deep learning tools in today’s security critical applications.
+        </p>
+    </div>
+    <div class="SageBio" style="display:none;">
+        <h2> Biography </h2>
+        <p>
+            Leslie Sage is the Director of Data Science at DevResults, a software company that provides a data management platform for the international development community. She has implemented DevResults software for use in over 60 countries by clients overseeing billion-dollar international development organizations and created training programs in data management. Previously, Leslie worked with the Obama Presidential Campaign in 2012 as Deputy Data Director for the battleground state of Iowa. In that position Leslie leveraged voter models to allocate campaign resources, created up-to-the-minute dashboards for decision-makers, and discovered Midwestern craft beers. Leslie hold a Ph.D. in Microvascular Physiology from the University of Bristol in England (2012) and a B.A. in Cognitive Science from Rice University (2004). Her research took her to the Hospital for Infectious Diseases in Ho Chi Minh City, Vietnam, where she collaborated with the Gates Foundation and Oxford University to develop a new way to study dengue infection.
+        </p>
+        <h2> Abstract </h2>
+        <p><b>Data and Design in International Development</b></p>
+        <p>
+            Foreign aid is a $150 billion dollar industry, but the skills and tools for using data in international development are in their infancy. Herculean efforts to overhaul systems of agriculture, education, sanitation, and health go unexamined because collecting that information is hard. Dr. Leslie Sage will introduce the challenges in this field and discuss how her company, DevResults, has addressed many of these obstacles. At the heart of every incremental gain are tools for connecting data to context, tools to derive useful information from related data, and expansion of interoperability. Forget big data; these organizations are tracking information that doesn't begin in electronic format, like school refurbishments and job trainings, then storing it in unstructured documents on inaccessible hard drives around the globe. These data are small but mighty, offering the chance to reduce disease, improve education, and lift people out of poverty. Making decisions with this data should be low-hanging fruit without the need for sexy math or the latest tools for handling terabytes of data. Developmental and humanitarian work is shifting to structured data in the cloud, but there’s a long way to go in designing web-based tools for this community. ACM attendees will be invited to lend their expertise to the cause.
+        </p>
+    </div>
+    <div class="SethBio" style="display:none;">
+        <h2> Biography </h2>
+        <p>
+            Seth Stephens-Davidowitz has used data from the internet -- particularly Google searches -- to get new insights into the human psyche. Seth has used Google searches to measure racism, self-induced abortion, depression, child abuse, hateful mobs, the science of humor, sexual preference, anxiety, son preference, and sexual insecurity, among many other topics.
+        </p>
+        <h2>Abstract</h2>
+        <p><b>Lessons in Search Data</b></p>
+        <p>Seth will discuss what Google searches can teach us about racism, sexuality, mental illness, and other topics.</p>
+    </div>
+    <div class="ElizabethBio" style="display:none;">
+        <h2> Biography </h2>
+        <p>
+            Elizabeth Kittrie is a Strategic Advisor for Data and Open Science at the National Library of Medicine (NLM) where she is involved in developing the NLM long-range strategic plan and leading data science and open science initiatives. Prior to joining to the NLM, she served as a Senior Advisor to the Associate Director for Data Science at the National Institutes of Health, where she led open innovation efforts including the Open Science Prize, a collaborative partnership between the NIH, Wellcome Trust and Howard Hughes Medical Institute. Kittrie has also served as Senior Advisor to the Chief Technology Officer of the U.S. Department of Health and Human Services, where she led open government activities across HHS and coordinated the Department’s efforts to develop a common Public Access Policy. Prior to joining HHS, Kittrie served as the first Associate Director for the Department of Biomedical Informatics at Arizona State University.
+        </p>
+        <h2>Abstract</h2>
+        <p><b>The US National Library of Medicine: A Platform for Biomedical Discovery and Data-Powered Health</b></p>
+        <p>
+            This talk will address the role of the National Library of Medicine in fostering data-powered health and serving as a platform for biomedical discovery. It will examine emerging trends in the biomedical research landscape, such as the rapid growth of biomedical data sources, shifting paradigms for data sharing and open science, and the changing role of libraries in providing access to digital information. The talk will cover the newly developed long-range vision of the National Library of Medicine, with its triple aim of: 1) accelerating discovery and advancing health through data-driven research; 2) reaching more people in more ways through enhanced dissemination and engagement; and 3) its contributions to building a workforce and populace that is empowered to conduct data-driven research and enabled to optimize health and healthcare delivery through access to new types of health information. This talk will also examine the importance of co-creation, though partnerships and crowdsourcing, to achieve solutions that optimize the roles of government and stakeholders in improving health and healthcare through information resources.
+        </p>
+    </div>
+    <!-- /.row -->
+    </div>
+    <!-- /.container -->
     </div>
     <!-- /#our-team -->
     <div class="content-section" id="Call" name="Call">
@@ -748,8 +1195,7 @@ community. ACM attendees will be invited to lend their expertise to the cause.
                     <div class="bluesky" style="display:none;">
                         <h2>Call for Blue Sky Ideas</h2>
                         <p>
-                            This year, with support from the Computing Community Consortium (CCC), ACM Hypertext is organizing a special <a href="https://cra.org/ccc/visioning/blue-sky/">Blue Sky Ideas</a> Track. The emphasis of this track is on visionary ideas, long-term challenges, and new research opportunities. This track is designed to overcome the constraints of the traditional review process, and will serve as an incubator for innovative approaches, risky and provocative ideas, and to propose challenges and opportunities in the near future. Submissions to this track are limited to a maximum of 4 pages, using the given submission <a href="http://www.acm.org/publications/proceedings-template">template</a> and are to be submitted at our <a href="https://easychair.org/conferences/?conf=ht18">easychair submission site</a>. Thanks to CCC sponsorship, the top 3 papers submitted to this track will be awarded with travel grants of $1000, $750 and $500 respectively. Successful submissions will be published in the regular proceedings. 
-All submissions to this special track will be evaluated by a dedicated committee consisting of Mark Bernstein (Eastgate), Krishna Gummadi (Max Planck Institute for Software Systems), Charlie Hargood (Bournemouth University), David Millard (University of Southampton), Nishanth Sastry (King's College London) and Ingmar Weber (Qatar Computing Research Institute).
+                            This year, with support from the Computing Community Consortium (CCC), ACM Hypertext is organizing a special <a href="https://cra.org/ccc/visioning/blue-sky/">Blue Sky Ideas</a> Track. The emphasis of this track is on visionary ideas, long-term challenges, and new research opportunities. This track is designed to overcome the constraints of the traditional review process, and will serve as an incubator for innovative approaches, risky and provocative ideas, and to propose challenges and opportunities in the near future. Submissions to this track are limited to a maximum of 4 pages, using the given submission <a href="http://www.acm.org/publications/proceedings-template">template</a> and are to be submitted at our <a href="https://easychair.org/conferences/?conf=ht18">easychair submission site</a>. Thanks to CCC sponsorship, the top 3 papers submitted to this track will be awarded with travel grants of $1000, $750 and $500 respectively. Successful submissions will be published in the regular proceedings. All submissions to this special track will be evaluated by a dedicated committee consisting of Mark Bernstein (Eastgate), Krishna Gummadi (Max Planck Institute for Software Systems), Charlie Hargood (Bournemouth University), David Millard (University of Southampton), Nishanth Sastry (King's College London) and Ingmar Weber (Qatar Computing Research Institute).
                         </p>
                         <h3>Deadlines</h3>
                         <ul>
@@ -817,7 +1263,6 @@ All submissions to this special track will be evaluated by a dedicated committee
                             <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                             <td> Towson U., USA</td>
                         </tr>
-
                         <tr>
                             <td><b>Program Co-chair</b></td>
                             <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -1113,7 +1558,7 @@ All submissions to this special track will be evaluated by a dedicated committee
                             <td> University of Southampton </td>
                         </tr>
                         <tr>
-				        <td>Toine Bogers <i class="fa fa-trophy"></i></td> 
+                            <td>Toine Bogers <i class="fa fa-trophy"></i></td>
                             <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                             <td> Aalborg University </td>
                         </tr>
@@ -1426,9 +1871,9 @@ All submissions to this special track will be evaluated by a dedicated committee
             <div class="row">
                 <div class="heading-section col-md-12 text-left">
                     <h2>Registration Process</h2>
-                    <p>Registration is open now, please follow our 
-		    <!--a href="https://www.regonline.com/registration/checkin.aspx?MethodId=0&EventSessionId=b35c10dbfb164c5d811ebc8234d63161&EventId=2053950" target="_blank"-->
-		    <a href="https://www.regonline.com/acmhypertext2018">portal</a> to register</p>
+                    <p>Registration is open now, please follow our
+                        <!--a href="https://www.regonline.com/registration/checkin.aspx?MethodId=0&EventSessionId=b35c10dbfb164c5d811ebc8234d63161&EventId=2053950" target="_blank"-->
+                        <a href="https://www.regonline.com/acmhypertext2018">portal</a> to register</p>
                 </div>
             </div>
         </div>
@@ -1437,45 +1882,75 @@ All submissions to this special track will be evaluated by a dedicated committee
                 <div class="heading-section col-md-12 text-left">
                     <h2>Registration Fares</h2>
                     <br> Below are the registration rates for Hypertext 2018. The registration rates are for the full conference, including workshops. It is also possible to register only for the workshops on Sunday or for the Creative Track.
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-</style>
-<table class="tg">
-  <tr>
-    <th class="tg-031e"></th>
-    <th class="tg-031e">ACM Members</th>
-    <th class="tg-031e">Non-ACM Members</th>
-    <th class="tg-031e">Students</th>
-  </tr>
-  <tr>
-    <td class="tg-031e">Advance Registration (Conference and Workshops)<br>(Until 17 June 2018)</td>
-    <td class="tg-031e">USD 580.00</td>
-    <td class="tg-031e">USD 660.00</td>
-    <td class="tg-031e">USD 380.00</td>
-  </tr>
-  <tr>
-    <td class="tg-031e">Late Registration (Conference and Workshops)<br>(Until 8 July 2018)</td>
-    <td class="tg-031e">USD 680.00</td>
-    <td class="tg-031e">USD 760.00</td>
-    <td class="tg-031e">USD 480.00</td>
-  </tr>
-  <tr>
-    <td class="tg-031e">Workshop-Only Registration (Advance, Late and On-Site)</td>
-    <td class="tg-031e">USD 200.00</td>
-    <td class="tg-031e">USD 250.00</td>
-    <td class="tg-031e"></td>
-  </tr>
-</table>
+                    <style type="text/css">
+                    .tg {
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                    }
 
+                    .tg td {
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        padding: 10px 5px;
+                        border-style: solid;
+                        border-width: 1px;
+                        overflow: hidden;
+                        word-break: normal;
+                    }
+
+                    .tg th {
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        font-weight: normal;
+                        padding: 10px 5px;
+                        border-style: solid;
+                        border-width: 1px;
+                        overflow: hidden;
+                        word-break: normal;
+                    }
+                    </style>
+                    <table class="tg">
+                        <tr>
+                            <th class="tg-031e"></th>
+                            <th class="tg-031e">ACM Members</th>
+                            <th class="tg-031e">Non-ACM Members</th>
+                            <th class="tg-031e">Students</th>
+                        </tr>
+                        <tr>
+                            <td class="tg-031e">Advance Registration (Conference and Workshops)
+                                <br>(Until 17 June 2018)</td>
+                            <td class="tg-031e">USD 580.00</td>
+                            <td class="tg-031e">USD 660.00</td>
+                            <td class="tg-031e">USD 380.00</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-031e">Late Registration (Conference and Workshops)
+                                <br>(Until 8 July 2018)</td>
+                            <td class="tg-031e">USD 680.00</td>
+                            <td class="tg-031e">USD 760.00</td>
+                            <td class="tg-031e">USD 480.00</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-031e">Workshop-Only Registration (Advance, Late and On-Site)</td>
+                            <td class="tg-031e">USD 200.00</td>
+                            <td class="tg-031e">USD 250.00</td>
+                            <td class="tg-031e"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-031e">Local Registration (participants from MD, VA, DE only)*</td>
+                            <td class="tg-031e">USD 300.00</td>
+                            <td class="tg-031e"></td>
+                            <td class="tg-031e">USD 250.00</td>
+                        </tr>
+                    </table>
                     <!--h3>Advance Registration (Conference and Workshops)</h3>
                     <br> Until 17 June 2018 ACM/SIG Members: USD 580.00 Non-ACM/SIG Members: USD 660.00 Students: USD 380.00
                     <h3>Late Registration (Conference and Workshops)</h3>
                     <br> Until 8 July 2018 ACM/SIG Members: USD 680.00 Non-ACM/SIG Members: USD 760.00 Students: USD 480.00
                     <h3>Workshop-Only Registration (Advance, Late and On-Site)</h3>
-                    <br> ACM/SIG Members USD 200.00 Non-ACM/SIG Members USD 250.00<--> 
-Additional Conference Banquet Tickets 1 ticket: USD 100.00
+                    <br> ACM/SIG Members USD 200.00 Non-ACM/SIG Members USD 250.00<-->
+                    <br>Additional Conference Banquet Tickets 1 ticket: USD 100.00
+                    <br> *Local registration does not include shuttle bus, lunch, and banquet dinner
                 </div>
             </div>
         </div>
@@ -1491,12 +1966,11 @@ Additional Conference Banquet Tickets 1 ticket: USD 100.00
                         <li>Authors may indicate their paper title. Speakers can provide the title of their talk.</li>
                         <li>Include a fax number or email address of where letter can be sent</li>
                     </ul>
-		    Please see the <a href="https://www.acm.org/special-interest-groups/volunteer-resources/conference-manual/visa-support-letters" target="_blank">ACM Visa Support Letters</a> web page for updates to this policy. ACM does not provide letters for transport of vendor
+                    Please see the <a href="https://www.acm.org/special-interest-groups/volunteer-resources/conference-manual/visa-support-letters" target="_blank">ACM Visa Support Letters</a> web page for updates to this policy. ACM does not provide letters for transport of vendor
                 </div>
             </div>
         </div>
     </div>
-
     <!-- /#our-team -->
     <div class="content-section" id="Venue" name="Venue">
         <div class="container">
